@@ -1,6 +1,6 @@
 // loader function ------------
 function loader() {
-  setTimeout(showLoader,500);
+  setTimeout(showLoader,200);
 }
 function showLoader() {
   $('.loader').slideUp(1000);
@@ -64,20 +64,54 @@ $(document).ready(function () {
     }
   })
 
-  $panel4.find(".down-nav ul li").click(function () {
+  function setPage(index) {
     $panel4.find(".down-nav ul li").removeClass('is-active');
-    $(this).addClass('is-active');
+    $(".down-nav ul li").eq(index).addClass('is-active');
+    $panel4.find('.wor').removeClass("active-wor");
+    $panel4.find('.wor').eq(index).addClass("active-wor");
+  }
+  $panel4.find(".down-nav ul li").click(function () {
     var index = $panel4.find(".down-nav ul li").index($(this));
-    $panel4.find('.wor').css({
-      'z-index' : '0'
-    })
-    $panel4.find('.wor').eq(index).css({
-      'z-index' : '2'
-    })
+    curIndex = index;
+    setPage(curIndex);
   });
 
+  var curIndex = 0;
+  $panel4.find("#circle-right").click(function () {
+    if (curIndex < 3) {
+      curIndex = curIndex+1;
+      setPage(curIndex)
+    }
+  })
+  $panel4.find("#circle-left").click(function () {
+    if (curIndex > 0) {
+      curIndex = curIndex-1;
+      setPage(curIndex)
+    }
+  })
+
+
+
+
   $(window).scroll(function () {
-    var scrollTop = $(this).scrollTop();
+    var scrollTop = $(window).scrollTop();
+
+    // Parallax Scrolling -------------
+    $(".speed-1").css({
+      "transform" : "translate(0%, "+ scrollTop / 3 +"%) rotate(45deg)"
+    })
+    $(".speed-2").css({
+      "transform" : "translate(0%, "+ scrollTop / 4 +"%) rotate(45deg)"
+    })
+    $(".speed-3").css({
+      "transform" : "translate(0%, "+ scrollTop / 6 +"%) rotate(45deg)"
+    })
+    $(".speed-4").css({
+      "transform" : "translate(0%, "+ scrollTop / 8 +"%) rotate(45deg)"
+    })
+    $(".speed-5").css({
+      "transform" : "translate(0%, "+ scrollTop / 10 +"%) rotate(45deg)"
+    })
 
     // Active Dots Navigation ---------------
     var len = $('.panel').length;
@@ -112,6 +146,8 @@ $(document).ready(function () {
     $panel3.find('.info').css({
       transform : 'translate('+ ((pgX / divider) + prev) + '%,' +((pgY / divider) - 25 + prev) + '%)'
     })
+
+
 
   })
 });
