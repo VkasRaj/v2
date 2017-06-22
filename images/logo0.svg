@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1756.67 500.32">
+  <title>logo_2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="wings">
+        <polygon id="middle-v" points="685.66 13.17 878.34 374.08 1071 13.17 878.34 500.32 685.66 13.17" fill="#fff" fill-rule="evenodd"/>
+        <g id="right-wing">
+          <polygon id="rw-stem" points="920.32 458.14 1093.68 42.08 1143.18 42.08 920.32 458.14" fill="#fff" fill-rule="evenodd"/>
+          <polygon id="rw5" points="1161.38 42.08 1756.67 0 1131.55 95.93 1161.38 42.08" fill="#fff" fill-rule="evenodd"/>
+          <path id="rw4" d="M1127.84,107.47l488.09-39.16-515.72,88.31Z" fill="#fff" fill-rule="evenodd"/>
+          <path id="rw3" d="M1094.3,172.86l380.89-36.25-406.31,80.69Z" fill="#fff" fill-rule="evenodd"/>
+          <path id="rw2" d="M1060.76,238.25l273.69-33.33L1037.54,278Z" fill="#fff" fill-rule="evenodd"/>
+          <polygon id="rw1" points="1027.22 307.64 1193.71 277.23 1006.2 342.68 1027.22 307.64" fill="#fff" fill-rule="evenodd"/>
+        </g>
+        <g id="left-wing">
+          <polygon id="lw-stem" points="836.35 458.14 662.99 42.08 613.49 42.08 836.35 458.14" fill="#fff" fill-rule="evenodd"/>
+          <polygon id="lw5" points="595.29 42.08 0 0 625.12 95.93 595.29 42.08" fill="#fff" fill-rule="evenodd"/>
+          <path id="lw4" d="M628.35,107.46,140.26,68.3,656,156.61Z" fill="#fff" fill-rule="evenodd"/>
+          <path id="lw3" d="M661.41,172.85,280.53,136.6l406.31,80.69Z" fill="#fff" fill-rule="evenodd"/>
+          <path id="lw2" d="M694.47,238.23,420.79,204.9,717.7,278Z" fill="#fff" fill-rule="evenodd"/>
+          <polygon id="lw1" points="727.53 303.62 561.05 273.2 748.56 338.65 727.53 303.62" fill="#fff" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
